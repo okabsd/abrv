@@ -1,0 +1,29 @@
+abrv - small utility for abbreviating paths
+
+installation:
+	make
+	make install
+
+places the executable in ~/.local/bin
+
+usage:
+	$ abrv /home/oka/programs/examples/foo
+	~/p/e/foo
+
+documentation:
+	you're reading it
+
+prints the leading character of each directory
+prints the final directory in full
+leading $HOME replaced by ~
+does not output a trailing newline
+
+bash example usage (~/.bashrc):
+
+	set_prompt() {
+		PS1="\u@\H $(abrv $(pwd)) \$ "
+	}
+
+	PROMPT_COMMAND=set_prompt
+
+oka <yo@oka.io>
