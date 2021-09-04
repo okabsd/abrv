@@ -13,8 +13,8 @@ usage:
 documentation:
 	you're reading it
 
-prints the leading character of each directory
-prints the final directory in full
+prints the leading character of each segment
+prints the final segment in full
 leading $HOME replaced by ~
 does not output a trailing newline
 
